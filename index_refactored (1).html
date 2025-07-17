@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Divya Bhalani | Portfolio
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  </link>
+ </head>
+ <body>
+  <!-- Header -->
+  <header class="header">
+   <!--top part of website , class is attribute so we can style using css-->
+   <div class="container">
+    <!--div is used to group elements together and style them-->
+    <div class="logo">
+     Personal Portfolio
+    </div>
+    <!--logo is group and styled-->
+    <nav class="nav">
+     <!--attribute for navigation menu-->
+     <a href="#home">
+      Home
+     </a>
+     <!--inside nav-->
+     <a href="#about">
+      About
+     </a>
+     <!--<a is a tag link href="#home" means it links to the section with id="home" on the same page.-->
+     <a href="#projects">
+      Projects
+     </a>
+     <a href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <!-- Hero Section / first section of page-->
+  <section class="hero" id="home">
+   <!--defines section of page ,we have given id so we can scroll it-->
+   <div class="container hero-flex">
+    <!--conatiner his class likely centers the content and controls width.-->
+    <div class="hero-text">
+     <h1>
+      Divya Mehulkumar Bhalani
+     </h1>
+     <p>
+      I'm Divya Bhalani, a passionate computer science engineer ready to build your next digital experience.
+     </p>
+     <a class="cta-btn" href="#contact">
+      Get In Touch
+     </a>
+     <!--class to look like call to action-->
+    </div>
+    <div class="hero-img">
+     <img alt="Divya Bhalani" src="profile/profile.jpeg"/>
+     <!--src means path of image-->
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="section" data-aos="fade-up" id="about">
+   <div class="container">
+    <!-- keeps everything aligned and spaced-->
+    <h2>
+     About Me
+    </h2>
+    <p>
+     🎓 Currently pursuing a B.Tech in Computer Science Engineering at DY Patil International University, with two years of academic and hands-on experience completed.
+    </p>
+    <p>
+     🌱 Successfully completed a rural internship with Umiya Social Trust, contributing to the Green Valsad Project — an initiative focused on environmental sustainability through the plantation of nearly 4,000 trees across the Valsad District.
+    </p>
+    <p>
+     💻 Presently interning in Software Development at Elite Tech Intern, where I’m applying my technical skills to real-world projects and continuing to grow as a developer.
+    </p>
+    <p>
+     🌟 Passionate about combining technology with purpose-driven work to create impactful solutions. Open to learning, collaborating, and exploring opportunities in the tech and social impact space.
+    </p>
+   </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="section" data-aos="fade-up" id="skills">
+   <div class="container">
+    <h2>
+     Skills
+    </h2>
+    <ul class="skills-list">
+     <li>
+      Python
+     </li>
+     <li>
+      MySQL
+     </li>
+     <li>
+      Data Structures and Algorithms
+     </li>
+     <li>
+      C Programming
+     </li>
+     <li>
+      MATLAB Simulink
+     </li>
+    </ul>
+   </div>
+  </section>
+  <!-- Green Valsad Project Section -->
+  <section class="section" data-aos="fade-up" id="green-valsad">
+   <div class="container">
+    <h2>
+     🌱 Green Valsad Project
+    </h2>
+    <p>
+     During my rural internship with
+     <strong>
+      Umiya Social Trust
+     </strong>
+     , I had the opportunity to contribute to the
+     <strong>
+      Green Valsad Project
+     </strong>
+     , an environmental sustainability initiative. Our goal was to plant trees across
+        Valsad District to combat deforestation and promote a greener ecosystem.
+    </p>
+    <p>
+     I was involved in planning, mapping plantation areas, coordinating volunteer efforts, and documenting progress. Together, we helped plant over
+     <strong>
+      4,000 trees
+     </strong>
+     in the region.
+    </p>
+    <button id="readMoreBtn">
+     Read More
+    </button>
+    <div class="hidden" id="moreContent">
+     <p>
+      🌿 The project not only improved local air quality but also increased community engagement and awareness on climate change. We collaborated with local schools and Gram Panchayats, where we conducted awareness drives and participated in tree-naming events involving local children to strengthen the bond between people and nature.
+     </p>
+     <!-- Green Valsad Photos -->
+     <div class="certificates-gallery" style="margin-top: 1rem;">
+      <img alt="Green Valsad Photo 1" onclick="openLightbox(this.src)" src="fy/image1.jpeg"/>
+      <img alt="Green Valsad Photo 2" onclick="openLightbox(this.src)" src="fy/image2.jpeg"/>
+      <img alt="Green Valsad Photo 3" onclick="openLightbox(this.src)" src="fy/image3.jpeg"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Projects Section -->
+  <!-- Projects Section -->
+  <section class="section" data-aos="fade-up" id="projects">
+   <div class="container">
+    <h2>
+     Projects
+    </h2>
+    <div class="projects">
+     <div class="project" data-aos="zoom-in">
+      <h3>
+       Portfolio Website
+      </h3>
+      <p>
+       This personal website was created using HTML, CSS, and JavaScript to showcase my skills and projects.
+      </p>
+     </div>
+     <div class="project" data-aos="zoom-in">
+      <h3>
+       Student Record System
+      </h3>
+      <p>
+       A command-line-based student management system developed in C++ with file handling and sorting features.
+      </p>
+     </div>
+     <div class="project" data-aos="zoom-in">
+      <h3>
+       Online Auction System
+      </h3>
+      <p>
+       Web-based auction system where users can list items, bid, and manage auctions with authentication and real-time updates.
+      </p>
+     </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+     <a class="cta-btn" href="smart-irrigation.html" style="padding: 0.75rem 1.5rem; background-color: #007bff; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+      View Smart Irrigation System Project
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Certificates Section -->
+  <section class="section" data-aos="fade-up" id="Certificates">
+  </section>
+  <div class="container">
+   <h2>
+    Certificates
+   </h2>
+   <div class="certificates-gallery">
+    <img alt="Certificate 1" onclick="openLightbox(this.src)" src="certificates/certificate1.png"/>
+    <img alt="Certificate 2" onclick="openLightbox(this.src)" src="certificates/certificate2.png"/>
+    <img alt="Certificate 3" onclick="openLightbox(this.src)" src="certificates/certificate3.jpg"/>
+    <img alt="Certificate 4" onclick="openLightbox(this.src)" src="certificates/certificate4.png"/>
+    <img alt="Certificate 5" onclick="openLightbox(this.src)" src="certificates/certificate5.png"/>
+    <img alt="Certificate 6" onclick="openLightbox(this.src)" src="certificates/certificate6.png"/>
+   </div>
+   <!-- Lightbox Overlay -->
+   <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox()">
+    <img alt="Certificate Full View" id="lightboxImage" src=""/>
+   </div>
+   <!-- Contact Section -->
+   <section class="section" data-aos="fade-up" id="contact">
+    <div class="container">
+     <h2>
+      Contact Me
+     </h2>
+     <form id="contactForm">
+      <input placeholder="Your Name" required="" type="text"/>
+      <input placeholder="Your Email" required="" type="email"/>
+      <textarea placeholder="Your Message" required=""></textarea>
+      <button type="submit">
+       Send
+      </button>
+     </form>
+     <p id="formMessage">
+     </p>
+    </div>
+   </section>
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container footer-container">
+     <div class="footer-left">
+      <p>
+       Divya Bhalani
+      </p>
+      <p>
+       Pune, Maharashtra
+      </p>
+     </div>
+     <div class="footer-right">
+      <a aria-label="Phone" href="tel:+919722113399" style="display: block; margin-bottom: 0.5rem;">
+       <i class="fas fa-phone-alt" style="margin-right: 0.3rem;">
+       </i>
+       +91 9722113399
+      </a>
+      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/divya-bhalani-a30671154" target="_blank">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+      <a aria-label="Instagram" href="https://www.instagram.com/bhalani_divy" target="_blank">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Facebook" href="https://www.facebook.com/share/1CS95JyQHc/" target="_blank">
+       <i class="fab fa-facebook">
+       </i>
+      </a>
+     </div>
+    </div>
+   </footer>
+   <script src="script.js">
+   </script>
+   <script>
+    AOS.init({ duration: 1000, once: true });
+   </script>
+  </div>
+ </body>
+</html>
